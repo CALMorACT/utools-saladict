@@ -1,68 +1,68 @@
 const replace = require('replace-in-file')
 const options = [
   {
-    files: '../ext-saladic/assets/runtime*.js',
+    files: '../ext-saladict/assets/runtime*.js',
     from: /n.p="\/"/g,
     to: 'n.p="./"'
   },
   {
-    files: '../ext-saladic/assets/background*.js',
+    files: '../ext-saladict/assets/background*.js',
     from: /\/options.html/g,
     to: 'options.html'
   },
   {
-    files: '../ext-saladic/assets/runtime*.js',
+    files: '../ext-saladict/assets/runtime*.js',
     from: /n.p\+"assets\/"/g,
     to: 'n.p+""'
   },
   {
-    files: '../ext-saladic/assets/runtime*.js',
+    files: '../ext-saladict/assets/runtime*.js',
     from: /"assets\/"/g,
     to: '"./"'
   },
   {
-    files: '../ext-saladic/assets/*.js',
+    files: '../ext-saladict/assets/*.js',
     from: /a="\/assets\/"\+`antd/g,
     to: 'a="./assets/"+`antd'
   },
   //替换axios模块
   {
-    files: '../ext-saladic/assets/*.js',
+    files: '../ext-saladict/assets/*.js',
     from: /[\w]\(596\)/g,
     to: 'window.axios'
   },
   {
-    files: '../ext-saladic/assets/*.js',
+    files: '../ext-saladict/assets/*.js',
     from: 'responseType:"document"}).then(({data:e})=>e)',
     to: 'responseType:"document"}).then(({data:e})=>new DOMParser().parseFromString(e,"text/html"))'
   },
   {
-    files: '../ext-saladic/assets/*.js',
+    files: '../ext-saladict/assets/*.js',
     from: /qsAuto:!1/g,
     to: 'qsAuto:!0'
   },
   {
-    files: '../ext-saladic/assets/*.js',
+    files: '../ext-saladict/assets/*.js',
     from: /qsPreload:"selection"/g,
     to: 'qsPreload:"clipboard"'
   },
   {
-    files: '../ext-saladic/assets/*.js',
+    files: '../ext-saladict/assets/*.js',
     from: /browser.runtime.getURL\("\/audio-control.html"/g,
     to: 'browser.runtime.getURL("audio-control.html"'
   },
   {
-    files: '../ext-saladic/*.html',
+    files: '../ext-saladict/*.html',
     from: /src="\//g,
     to: 'src="./'
   },
   {
-    files: '../ext-saladic/*.html',
+    files: '../ext-saladict/*.html',
     from: /href="\//g,
     to: 'href="./'
   },
   {
-    files: '../ext-saladic/*.html',
+    files: '../ext-saladict/*.html',
     from: '<script src="./assets/browser-polyfill.min.js"></script>',
     to:
         '<script src="../webextensions-emulator-master/dist/background.js"></script>'

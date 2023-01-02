@@ -51,7 +51,7 @@
 
 - 升级沙拉查词 v7.19.0
 
-[历史更新记录](https://github.com/anrgct/utools-saladic/releases)
+[历史更新记录](https://github.com/anrgct/utools-saladict/releases)
 
 ### 其他
 
