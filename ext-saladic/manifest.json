@@ -1,5 +1,5 @@
 {
-  "version": "7.19.0",
+  "version": "7.20.0",
   "content_scripts": [
     {
       "css": [
@@ -11,10 +11,10 @@
       ],
       "js": [
         "assets/browser-polyfill.min.js",
-        "assets/runtime.4097fa5f.js",
-        "assets/view-vendor.13bec606.js",
-        "assets/18.827da3d5.js",
-        "assets/content.0bf00037.js"
+        "assets/runtime.fbeeaff4.js",
+        "assets/view-vendor.47cf4d8a.js",
+        "assets/18.819ea6d2.js",
+        "assets/content.0352e950.js"
       ]
     },
     {
@@ -25,10 +25,10 @@
       ],
       "js": [
         "assets/browser-polyfill.min.js",
-        "assets/runtime.4097fa5f.js",
-        "assets/view-vendor.13bec606.js",
-        "assets/21.fa5a96c8.js",
-        "assets/selection.947dc220.js"
+        "assets/runtime.fbeeaff4.js",
+        "assets/view-vendor.47cf4d8a.js",
+        "assets/21.c953939f.js",
+        "assets/selection.420695b7.js"
       ]
     }
   ],
@@ -51,11 +51,11 @@
   "background": {
     "scripts": [
       "assets/browser-polyfill.min.js",
-      "assets/runtime.4097fa5f.js",
-      "assets/view-vendor.13bec606.js",
-      "assets/dexie.c13adbda.js",
-      "assets/20.473a1c38.js",
-      "assets/background.68a7256d.js"
+      "assets/runtime.fbeeaff4.js",
+      "assets/view-vendor.47cf4d8a.js",
+      "assets/dexie.e0cbbdaa.js",
+      "assets/20.25bb6aef.js",
+      "assets/background.20148fa5.js"
     ],
     "persistent": true
   },
@@ -149,7 +149,7 @@
     "clipboardWrite",
     "background"
   ],
-  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "content_security_policy": "script-src 'self' chrome-extension://hfjbmagddngcpeloejdejnfgbamkjaeg/ chrome-extension://aibcglbfblnogfjhbcmmpobjhnomhcdo/; object-src 'self'",
   "incognito": "split",
   "update_url": "https://clients2.google.com/service/update2/crx"
 }
