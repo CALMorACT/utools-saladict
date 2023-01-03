@@ -1,0 +1,3 @@
+[submodule "webextensions-emulator"]
+	path = webextensions-emulator
+	url = https://github.com/awesome-webextension/webextensions-emulator.git
